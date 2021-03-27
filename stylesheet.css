@@ -1,0 +1,979 @@
+/* フォント */
+body {
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+}
+
+/* 装飾 */
+.br-w {
+  display: none;
+}
+
+/* プレ画面 */
+.body-pre {
+  background-color: #ffffff;
+  background-color: #fbfbfb;
+}
+
+.video-wrapper {
+  width: 100%;
+}
+
+#video {
+  width: 100%;
+  margin: 200px auto;
+}
+
+/* ヘッダー */
+body {
+  margin: 0;
+  background-color: #FFFFFA;
+}
+
+header {
+  background-color: #6f4b3e;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+
+.header-logo img {
+  width: 350px;
+}
+
+.header-menu {
+  display:flex;
+  line-height: 60px;
+}
+
+.header-menu a {
+  text-decoration: none;
+  color: white;
+  margin-left: 30px;
+  font-family: Verdana;
+  font-family: "ゆな字",'Yusei Magic';
+  font-size: 20px;
+}
+
+.menu-btn {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  height: 60px;
+  width: 60px;
+  justify-content: center;
+  align-items: center;
+  z-index: 90;
+  background-color: rgba(255,255,255,0.5);
+}
+
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 25px;
+    border-radius: 3px;
+    background-color: rgba(255,255,255,0.8);
+    position: absolute;
+}
+
+.menu-btn span:before {
+  bottom: 8px;
+}
+
+.menu-btn span:after {
+  top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+  background-color: rgba(255, 255, 255, 0);/*メニューオープン時は真ん中の線を透明にする*/
+}
+
+#menu-btn-check:checked ~ .menu-btn span::before {
+  bottom: 0;
+  transform: rotate(45deg);
+}
+
+#menu-btn-check:checked ~ .menu-btn span::after {
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+  display: none;
+}
+
+.menu-btn-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  font-family: "ゆな字",'Yusei Magic';
+}
+
+.menu-btn-content ul {
+  padding: 70px 10px 0;
+}
+.menu-btn-content ul li {
+  border-bottom: solid 1px #ffffff;
+  list-style: none;
+}
+.menu-btn-content ul li a {
+  display: block;
+  width: 100%;
+  font-size: 20px;
+  box-sizing: border-box;
+  color:#ffffff;
+  text-decoration: none;
+  padding: 9px 15px 10px 0;
+  position: relative;
+}
+.menu-btn-content ul li a::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-top: solid 2px #ffffff;
+  border-right: solid 2px #ffffff;
+  transform: rotate(45deg);
+  position: absolute;
+  right: 11px;
+  top: 16px;
+}
+
+.menu-btn-content {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 100%;/*leftの値を変更してメニューを画面外へ*/
+  z-index: 80;
+  background-color: rgba(0,89,49);
+  transition: all 0.5s;/*アニメーション設定*/
+}
+
+#menu-btn-check:checked ~ .menu-btn-content {
+  left: 0;/*メニューを画面内へ*/
+}
+
+.hamburger-menu {
+  display: none;
+}
+
+/* ファーストビュー */
+.#photo {
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+    text-align: left;
+    overflow: hidden;
+    position: relative;
+}
+
+#photo img {
+    width: 100%;
+    height: 800px;
+    object-fit: cover;
+    position: absolute;
+}
+
+/* About us */
+@font-face {
+  font-family: "ゆな字";
+  src: url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.eot") format('eot'),
+       url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.woff") format('woff'),
+       url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.ttf") format('truetype');
+}
+
+.title {
+  margin-top: 130px;
+  margin-bottom: 150px;
+  font-weight: normal;
+  border: 1px solid black;
+  display: inline-block;
+  padding: 10px 30px;
+  font-family: "ゆな字",'Yusei Magic';
+  color: white;
+}
+
+.font {
+  font-family: 'Hachi Maru Pop', cursive;
+}
+
+.text-center h1 {
+  position: relative;
+  text-transform: uppercase;
+}
+
+.text-center h1:after {
+  position: absolute;
+  top:5px;
+  left:-5px;
+  content:"";
+  height:100%;
+  width:100%;
+  z-index:-999;
+  -webkit-transform: rotate(-1deg);
+  -moz-transform: rotate(0deg);
+  background: #8f2e14;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.about {
+  margin-top: 900px;
+}
+
+.about-content {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.about-content p {
+  text-align: center;
+}
+
+/* メニュー */
+.menu {
+  display: flex;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.menu-w {
+  display: flex;
+  flex-flow: row-reverse;
+  width: 95%;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
+.menu-img {
+  width: 50%;
+}
+
+.menu-content {
+  width: 50%;
+  margin: 0 auto;
+  padding: 3%;
+}
+
+.menu-content h2 {
+  font-weight: 900;
+  font-size: 30px;
+  font-family: "ゆな字",'Yusei Magic';
+  margin: 20px 0 0 0;
+}
+
+.menu-content img {
+  width: 100%;
+}
+
+.menu-content p {
+  margin-top: 20px;
+}
+
+.menu-img img {
+  width: 100%;
+}
+
+/* memu-more */
+.menu-more-flex {
+  display: flex;
+  justify-content: space-between;
+  margin: 200px auto;
+  width: 90%;
+}
+
+.menu-more a {
+  text-decoration: none;
+}
+
+.menu-more-bg {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+}
+
+.menu-more {
+  position: absolute;
+  width: 300px;
+  height: 160px;
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding-top: 140px;
+}
+
+.menu-more-bg a {
+  color: white;
+  font-size: 50px;
+  font-family: "ゆな字",'Yusei Magic';
+}
+
+.lunch-bg {
+  background: url("img/top/10.jpg");
+  background-size: cover;
+}
+
+.dinner-bg {
+  background: url("img/top/21.jpg");
+  background-size: cover;
+}
+
+.takeout-bg {
+  background: url("img/top/22.jpg");
+  background-size: cover;
+}
+
+/* SNS */
+.green {
+  width: 100%;
+  /* height: 50%; */
+  margin-bottom: 200px;
+}
+
+.sns {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.sns-iframe {
+  width: 100%;
+  margin: 30px auto 0 auto;
+  display: inline-block;
+  text-align:center;
+}
+
+.insta-s {
+  display: none;
+}
+
+.sns-title a {
+  font-size: 40px;
+  font-family: "ゆな字",'Yusei Magic';
+  color: black;
+  text-decoration: none;
+}
+
+
+.sns-title {
+  margin:0 0 30px 30px;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all  0.3s ease;
+}
+
+.facebook {
+  margin-top: 200px;
+  margin-bottom: 200px;
+}
+
+.lineArrow {
+  width: 120%;
+  height: 15px;
+  border-bottom: 1px solid #000;
+  border-right: 1px solid #000;
+   /*傾きを調節*/
+  transform: skew(45deg);
+  /*下線矢印をテキストに合わせてうまい具合にはめる*/
+  margin: -10px 0 0 -25px;
+}
+
+/* access */
+.access {
+ list-style: none;
+}
+
+.access-flex {
+  display: flex;
+}
+
+.access-left {
+  width: 50%;
+}
+
+.access-right {
+  width: 50%;
+  margin-left: 50px;
+}
+
+.access-left img {
+  width: 100%;
+}
+
+.reservation p {
+  margin: 0;
+}
+
+.reservation {
+  margin-top: 20px;
+  padding-left: 40px;
+}
+
+.map {
+  margin-top: 50px;
+}
+
+.map a {
+  margin-left: 60px;
+}
+
+.map iframe {
+  width: 90%;
+  margin: 0 auto;
+  display: block;
+}
+
+.footer-wrapper {
+  background-color: #6f4b3e;
+  padding: 50px 0;
+  margin-top: 30px;
+}
+
+.footer-wrapper p {
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+
+.footer-wrapper {
+  text-align: center;
+}
+
+.footer-wrapper img {
+  margin-top: 30px;
+  width: 10%;
+}
+
+/* コンセプトページ */
+h1 {
+  font-family: "ゆな字",'Yusei Magic';
+  font-size: 60px;
+  margin-left: 40px;
+}
+
+.concept-text {
+  width: 90%;
+  margin-left: 40px;
+  padding: 30px;
+}
+
+.paper-bg {
+  background-image: url(img/paper-bg.png);
+}
+
+.concept-ivy {
+  width: 10%;
+}
+
+.concept-ivy img {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.concept-wrapper {
+  margin: 50px 0 50px 50px;
+  padding: 20px 0 20px 20px;
+  background-color: #8f2620;
+  color: white;
+}
+
+.concept-wrapper-w {
+  background-color: #005931;
+}
+
+.concept-wrapper p {
+  font-size: 30px;
+  font-family: "ゆな字",'Yusei Magic';
+}
+
+.concept img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.concept1-1 img {
+  width: 50%;
+  margin: 0 auto;
+  padding-left: 40%;
+  margin-top: 40px;
+}
+
+.concept1-2 img {
+  width: 70%;
+  margin: 30px 0;
+}
+
+.concept1-3 img {
+  width: 40%;
+  padding-left: 60%;
+}
+
+.concept2-1 img {
+  width: 60%;
+  margin: 30px 0;
+  padding-left: 30%;
+  margin-top: 40px;
+}
+
+.concept2-2 img {
+  width: 40%;
+}
+
+.concept2-3 img {
+  margin-top: 30px;
+  padding-left: 20%;
+  width: 60%;
+}
+
+.concept3-1 img {
+  width: 60%;
+  margin: 30px 0;
+  padding-left: 30%;
+  margin-top: 40px;
+}
+
+.concept3-2 img {
+  width: 60%;
+}
+
+.concept3-3 img {
+  width: 40%;
+  margin:30px 0;
+  padding-left: 50%;
+}
+
+.flex {
+  display: flex;
+}
+
+/* メニューページ */
+.menu-h1 {
+  text-align: center;
+  border-bottom: 1px solid black;
+  width: 30%;
+  margin: 150px auto 200px auto;
+  padding: 10px;
+}
+
+.menu-title {
+  text-align: center;
+  font-size: 54px;
+  font-family: "ゆな字",'Yusei Magic';
+  margin-top: 150px;
+  margin-bottom: 50px;
+}
+
+.menu-title-ja {
+  font-size: 20px;
+  color: #005931;
+  margin: 0;
+}
+
+.menu-title p {
+  margin: 0;
+}
+
+.menu-imgs {
+  display: flex;
+  margin-bottom: 50px;
+}
+
+dl.menu-detail div{
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 0;
+  padding: 5px 0;
+  border-bottom: 1px solid #dcdcdc;
+  }
+
+dl.menu-detail dt{
+  margin:0;
+  padding: 0 5px 0 0;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: left;
+}
+
+dl.menu-detail dd{
+  margin:0;
+  padding: 0 0 0 5px;
+  background-color: #ffffff;
+  z-index: 2;
+  text-align: right;
+}
+
+/* background */
+.grey-bg {
+ background-color:#e5e5e5;
+}
+
+section.menu-details {
+  max-width:800px;
+  margin:0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+}
+
+.comment {
+  margin: 0;
+  font-family: "ゆな字",'Yusei Magic';
+  font-size: 14px;
+  color: #005931;
+  margin-top: 20px;
+}
+
+.bubble {
+	position: relative;
+	background: #830229;
+	border-radius: .4em;
+  color: white;
+  display:inline-block;
+  margin: 0;
+  padding: 5px 10px;
+  font-size: 12px;
+}
+
+.bubble:after {
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-top-color: #830229;
+	border-bottom: 0;
+	border-right: 0;
+	margin-left: -0.312em;
+	margin-bottom: -0.625em;
+}
+
+.select {
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.select-under {
+  text-decoration: underline wavy rgba(131,2,41,0.5);
+  display: inline-block;
+  margin: 10px 0 0 30px;
+}
+
+/* レスポンシブ */
+@media (max-width: 1025px){
+
+  .header-menu {
+    display: none;
+  }
+
+  .slide .item {
+    /* height: 490px; */
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .about-content {
+    width: 90%;
+  }
+
+  .menu-content h2 {
+    font-size: 20px;
+  }
+
+  .menu-content p {
+    font-size: 12px;
+  }
+
+  .insta-s {
+    display: block;
+  }
+
+  .insta-l {
+    display: none;
+  }
+
+  .sns-title a {
+    font-size: 30px;
+  }
+
+  .access-flex {
+    font-size: 12px;
+  }
+
+  .map {
+    font-size: 12px;
+  }
+
+  /* menumore */
+  .menu-more {
+    width: 200px;
+    height: 120px;
+    padding-top:80px;
+  }
+
+  .menu-more-bg {
+    width: 200px;
+    height: 200px;
+  }
+
+  /* コンセプトページ */
+  .concept img {
+    width: 100%;
+    height: 300px;
+}
+
+  /* メニューページ */
+  .menu-title {
+    font-size: 40px;
+  }
+
+@media (max-width: 734px){
+  .header-logo img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .slide .item {
+    height: 250px;
+  }
+
+  .menu-btn {
+    top: 10px;
+    right: 10px;
+    height: 35px;
+    width: 35px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .br {
+    display: none;
+  }
+
+  .br-w {
+    display: block;
+  }
+
+  #photo img {
+    height: 300px;
+  }
+
+  .about {
+    margin-top: 300px;
+  }
+
+  .about-content {
+    width: 95%;
+  }
+
+  .about-content p {
+    font-size: 10px;
+  }
+
+  .about-content p {
+    text-align: left;
+    margin-right: 5px;
+    margin-left: 5px;
+    line-height: 20px;
+  }
+
+  .menu-h1 {
+    margin: 50px auto 100px auto;
+  }
+
+  .menu {
+    display: block;
+  }
+
+  .menu-w {
+    display: block;
+  }
+
+  .menu-img {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .menu-content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .menu-content p {
+    font-size: 10px;
+  }
+
+  .menu-content h2 {
+    font-size: 16px;
+  }
+
+  /* menumore */
+  .menu-more-flex {
+    display: block;
+    margin: 100px auto;
+  }
+
+  .menu-more {
+    width: 100%;
+    height: 70px;
+    padding-top:30px;
+  }
+
+  .menu-more-bg {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+  }
+
+  /* SNS */
+  .sns- a {
+    font-size: 20px;
+  }
+
+  .facebook {
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+
+  /* access */
+  .access-flex {
+    font-size: 10px;
+  }
+
+  .access-left {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+  }
+
+  .access-left img {
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+
+  .access-right {
+    margin-left: 0;
+  }
+
+  .access ul {
+    padding-left: 10px;
+  }
+
+  .map {
+    font-size: 10px;
+  }
+
+  .map a {
+    margin-left: 30px;
+  }
+
+  .reservation  {
+    padding-left: 10px;
+  }
+
+  /* footer */
+  .footer-wrapper p {
+    font-size: 8px;
+    margin-bottom: 20px;
+  }
+
+  .footer-wrapper img {
+    margin-top: 20px;
+    width: 30%;
+  }
+
+  /* コンセプトページ */
+  .concept img {
+    height: 250px;
+  }
+
+ h1 {
+  font-size: 30px;
+   margin: 30px 10px;
+ }
+
+  .concept-wrapper {
+    margin-left: 20px;
+  }
+
+  .concept-wrapper p {
+    font-size: 16px;
+  }
+
+  .concept-text {
+    font-size: 10px;
+    margin-left: 10px;
+  }
+
+  .concept-wrapper .font {
+    font-size: 18px;
+  }
+
+/* メニューページ */
+  .menu- {
+    font-size: 25px;
+    margin-top: 50px;
+  }
+
+  .menu-title-ja {
+    font-size: 14px;
+  }
+
+  .menu-detail {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menu-detail p {
+    font-size: 8px;
+  }
+
+  .menu-detail a {
+    font-size: 8px;
+    margin: 0;
+  }
+
+  .select li {
+    font-size: 8px;
+  }
+
+  dt {
+    font-size: 10px;
+  }
+
+  dd {
+    font-size: 10px;
+  }
+}
