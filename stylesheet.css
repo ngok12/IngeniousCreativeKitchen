@@ -615,6 +615,7 @@ dl.menu-detail div{
   position: relative;
   display: flex;
   justify-content: space-between;
+  margin: 5px 0;
   padding: 5px 0;
   border-bottom: 1px solid #dcdcdc;
   }
