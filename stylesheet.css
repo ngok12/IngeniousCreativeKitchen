@@ -10,7 +10,6 @@ body {
 
 /* プレ画面 */
 .body-pre {
-  background-color: #ffffff;
   background-color: #fbfbfb;
 }
 
@@ -55,7 +54,7 @@ header {
   color: white;
   margin-left: 30px;
   font-family: Verdana;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
   font-size: 20px;
 }
 
@@ -117,7 +116,7 @@ header {
   top: 0;
   left: 0;
   z-index: 80;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
 }
 
 .menu-btn-content ul {
@@ -187,11 +186,25 @@ header {
 
 /* About us */
 @font-face {
-  font-family: "ゆな字";
-  src: url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.eot") format('eot'),
-       url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.woff") format('woff'),
-       url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.ttf") format('truetype');
+  /* font-family: "ゆな字"; */
+  /* src: url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.eot") format('eot'), */
+       /* url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.woff") format('woff'), */
+       /* url("C:\Users\maokonag.FUJI\Desktop\Webdesign\Ingenious\YuNaFont_0105\YuNaFont.ttf") format('truetype'); */
 }
+
+/*
+WEBフォントで「ふい字(HuiFontP109)」 ver130717
+http://customtemplate.blog112.fc2.com/blog-entry-143.html
+*/
+@font-face {
+  font-family: 'HuiFontP109';
+  src: url("https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot");
+  src: url("https://dl.dropboxusercontent.com/s/6snqvg654tirsyv/HuiFontP109.eot?#iefix") format("embedded-opentype"),
+       url("https://dl.dropboxusercontent.com/s/7pscemjdvt0wyiq/HuiFontP109.woff") format("woff"),
+       url("https://dl.dropboxusercontent.com/s/0w9uuopxrns8ehi/HuiFontP109.ttf") format("truetype"),
+       url("https://dl.dropboxusercontent.com/s/xnnsbxtz8o6d98i/HuiFontP109.svg#HuiFontP109") format("svg");
+}
+
 
 .title {
   margin-top: 130px;
@@ -200,12 +213,13 @@ header {
   border: 1px solid black;
   display: inline-block;
   padding: 10px 30px;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
   color: white;
 }
 
 .font {
-  font-family: 'Hachi Maru Pop', cursive;
+  /* font-family: 'Hachi Maru Pop', cursive; */
+  font-family: 'HuiFontP109', sans-serif;
 }
 
 .text-center h1 {
@@ -272,7 +286,7 @@ header {
 .menu-content h2 {
   font-weight: 900;
   font-size: 30px;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
   margin: 20px 0 0 0;
 }
 
@@ -319,7 +333,8 @@ header {
 .menu-more-bg a {
   color: white;
   font-size: 50px;
-  font-family: "ゆな字",'Yusei Magic';
+  /* font-family: "ゆな字",'Yusei Magic'; */
+  font-family: 'HuiFontP109', sans-serif;
 }
 
 .lunch-bg {
@@ -361,7 +376,7 @@ header {
 
 .sns-title a {
   font-size: 40px;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
   color: black;
   text-decoration: none;
 }
@@ -461,7 +476,7 @@ header {
 
 /* コンセプトページ */
 h1 {
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
   font-size: 60px;
   margin-left: 40px;
 }
@@ -482,6 +497,7 @@ h1 {
 
 .concept-ivy img {
   width: 100%;
+  height: 100%;
   margin: 0 auto;
 }
 
@@ -498,7 +514,7 @@ h1 {
 
 .concept-wrapper p {
   font-size: 30px;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
 }
 
 .concept img {
@@ -509,54 +525,54 @@ h1 {
 }
 
 .concept1-1 img {
-  width: 50%;
+  width: 70%;
   margin: 0 auto;
-  padding-left: 40%;
+  padding-left: 30%;
   margin-top: 40px;
 }
 
 .concept1-2 img {
-  width: 70%;
+  width: 95%;
   margin: 30px 0;
 }
 
 .concept1-3 img {
-  width: 40%;
-  padding-left: 60%;
+  width: 60%;
+  padding-left: 40%;
 }
 
 .concept2-1 img {
-  width: 60%;
+  width: 80%;
   margin: 30px 0;
-  padding-left: 30%;
   margin-top: 40px;
 }
 
 .concept2-2 img {
-  width: 40%;
+  width: 60%;
+  padding-left: 50%;
 }
 
 .concept2-3 img {
   margin-top: 30px;
-  padding-left: 20%;
-  width: 60%;
+  padding-left: 10%;
+  width: 70%;
 }
 
 .concept3-1 img {
-  width: 60%;
+  width: 80%;
   margin: 30px 0;
-  padding-left: 30%;
+  padding-left: 20%;
   margin-top: 40px;
 }
 
 .concept3-2 img {
-  width: 60%;
+  width: 80%;
 }
 
 .concept3-3 img {
-  width: 40%;
+  width: 70%;
   margin:30px 0;
-  padding-left: 50%;
+  padding-left: 30%;
 }
 
 .flex {
@@ -575,7 +591,7 @@ h1 {
 .menu-title {
   text-align: center;
   font-size: 54px;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
   margin-top: 150px;
   margin-bottom: 50px;
 }
@@ -634,7 +650,7 @@ section.menu-details {
 
 .comment {
   margin: 0;
-  font-family: "ゆな字",'Yusei Magic';
+  font-family: 'HuiFontP109', sans-serif;
   font-size: 14px;
   color: #005931;
   margin-top: 20px;
