@@ -799,11 +799,11 @@ section.menu-details {
   }
 
   #photo img {
-    height: 500px;
+    height: 800px;
   }
 
   .about {
-    margin-top: 600px;
+    margin-top: 800px;
   }
 
   .about-content {
@@ -973,6 +973,12 @@ section.menu-details {
 
   .menu-imgs {
     margin-bottom: 30px;
+  }
+
+  .menu-img img {
+    /* width:  */
+    height: 150px;
+    object-fit: cover;
   }
 
   .menu-detail {
