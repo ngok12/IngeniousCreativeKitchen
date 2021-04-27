@@ -292,6 +292,7 @@ http://customtemplate.blog112.fc2.com/blog-entry-143.html
 
 .menu-content img {
   width: 100%;
+  margin-top: 5px;
 }
 
 .menu-content p {
@@ -300,7 +301,7 @@ http://customtemplate.blog112.fc2.com/blog-entry-143.html
 
 .menu-img img {
   width: 100%;
-  height: 350px;
+  height: 400px;
   object-fit: cover;
 }
 
@@ -339,18 +340,18 @@ http://customtemplate.blog112.fc2.com/blog-entry-143.html
   font-family: 'HuiFontP109', sans-serif;
 }
 
+.concept-bg {
+  background: url("img/top/20.jpg");
+  background-size: cover;
+}
+
 .lunch-bg {
   background: url("img/top/10.jpg");
   background-size: cover;
 }
 
 .dinner-bg {
-  background: url("img/top/21.jpg");
-  background-size: cover;
-}
-
-.takeout-bg {
-  background: url("img/top/22.jpg");
+  background: url("img/top/3.jpg");
   background-size: cover;
 }
 
@@ -983,7 +984,7 @@ section.menu-details {
 
   .menu-img img {
     /* width:  */
-    height: 150px;
+    height: 250px;
     object-fit: cover;
   }
 
