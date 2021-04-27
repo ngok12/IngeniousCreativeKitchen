@@ -984,7 +984,7 @@ section.menu-details {
 
   .menu-img img {
     /* width:  */
-    height: 250px;
+    height: 150px;
     object-fit: cover;
   }
 
@@ -1011,5 +1011,13 @@ section.menu-details {
 
   dd {
     font-size: 12px;
+  }
+
+  .menu-img-top img {
+    height: 250px;
+  }
+
+  .clear {
+    display: none;
   }
 }
