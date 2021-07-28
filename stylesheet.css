@@ -8,11 +8,6 @@ body {
   display: none;
 }
 
-.mokume {
-  background-image: url("img/concept/1.jpg");
-  background-size: cover;
-}
-
 /* プレ画面 */
 .body-pre {
   background-color: #fbfbfb;
@@ -246,7 +241,8 @@ header {
 }
 
 .about-content p {
-  text-align: center;
+  width: 60%;
+  margin: 0 auto;;
 }
 
 /* メニュー */
@@ -254,7 +250,7 @@ header {
   display: flex;
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .menu-w {
@@ -262,15 +258,16 @@ header {
   flex-flow: row-reverse;
   width: 95%;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
 }
 
 .menu-img {
   width: 50%;
+  padding: 1%;
 }
 
 .menu-content {
-  width: 50%;
+  width: 40%;
   margin: 0 auto;
   padding: 2%;
 }
@@ -290,14 +287,14 @@ header {
 .menu-content p {
   margin-top: 20px;
   font-family: 'HuiFontP109', sans-serif;
-  color: #005931;
+  /* color: #005931; */
   line-height: 30px;
   font-size: 20px;
 }
 
 .menu-img img {
   width: 100%;
-  height: 400px;
+  height: 500px;
   object-fit: cover;
 }
 
@@ -315,18 +312,18 @@ header {
 
 .menu-more-bg {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 30%;
+  height: 350px;
   background-size: cover;
 }
 
 .menu-more {
   position: absolute;
-  width: 300px;
-  height: 160px;
+  width: 100%;
+  height: 200px;
   background: rgba(0, 0, 0, 0.6);
   text-align: center;
-  padding-top: 140px;
+  padding-top: 150px;
 }
 
 .menu-more-bg a {
@@ -348,67 +345,6 @@ header {
 .dinner-bg {
   background: url("img/top/3.jpg");
   background-size: cover;
-}
-
-/* SNS */
-.green {
-  width: 100%;
-  margin-bottom: 200px;
-}
-
-.sns {
-  width: 100%;
-  margin: 0 auto;
-  background-image: url("img/top/31.jpg");
-}
-
-.sns-iframe {
-  width: 100%;
-  margin: 30px auto 0 auto;
-  display: inline-block;
-  text-align:center;
-}
-
-.insta-s {
-  display: none;
-}
-
-.sns-title a {
-  font-size: 40px;
-  font-family: 'HuiFontP109', sans-serif;
-  color: white;
-  text-decoration: none;
-}
-
-
-.sns-title {
-  margin:0 0 30px 30px;
-  display: inline-block;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all  0.3s ease;
-}
-
-.instagram {
-  padding-top: 50px;
-}
-
-.facebook {
-  margin-top: 200px;
-  margin-bottom: 150px;
-  padding-bottom: 50px;
-}
-
-.lineArrow {
-  width: 120%;
-  height: 15px;
-  border-bottom: 3px solid #FFF;
-  border-right: 3px solid #FFF;
-   /*傾きを調節*/
-  transform: skew(45deg);
-  /*下線矢印をテキストに合わせてうまい具合にはめる*/
-  margin: -10px 0 0 -25px;
 }
 
 /* access */
@@ -479,126 +415,77 @@ header {
 }
 
 /* コンセプトページ */
+.concept img {
+  width: 100%;
+  height: 700px;
+  object-fit: cover;
+  object-position: top;
+}
+
 h1 {
   font-family: 'HuiFontP109', sans-serif;
   font-size: 60px;
   margin-left: 40px;
 }
 
-.concept-text {
-  width: 90%;
-  margin-left: 40px;
-  padding: 30px;
-}
-
-.concept-ivy {
-  width: 10%;
-}
-
-.concept-ivy img {
-  width: 100%;
-  height: 100%;
-  margin: 0 auto;
-}
-
 .concept-wrapper {
-  margin: 50px 0 50px 50px;
-  padding: 20px 0 20px 20px;
-  background-color: #8f2620;
-  color: white;
+  position:relative;
+  margin-bottom: 30%;
 }
 
-.concept-wrapper-w {
-  background-color: #005931;
+.concept-left {
+  height: 700px;
+  background-color: #d4c0b0;
+  margin-right: 15%;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.concept-right {
+  height: 700px;
+  background-color: #d4c0b0;
+  margin-left: 40%;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 .concept-wrapper p {
-  font-size: 30px;
+  font-size: 40px;
   font-family: 'HuiFontP109', sans-serif;
 }
 
-.concept img {
-  width: 100%;
-  height: 500px;
+.number {
+  font-size: 130px;
+  /* font-family: "ヒラギノ角ゴ ProN W3","HiraKakuProN-W3","ヒラギノ角ゴ Pro W3","HiraKakuPro-W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS Pgothic","Osaka",sans-serif,Helvetica, Helvetica Neue, Arial, Verdana; */
+}
+
+.concept-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.concept-text {
+  width: 90%;
+}
+
+.concept1 img {
+  width: 60%;
   object-fit: cover;
-  object-position: top;
-}
-
-.concept1-1 img {
-  width: 70%;
   margin: 0 auto;
-  margin-left: 30%;
-  margin-top: 40px;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(6deg);
+  /* float: right; */
+  position: absolute;
+  top:300px;
+  right: 0;
 }
 
-.concept1-2 img {
-  width: 70%;
-  margin: 30px 0;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(-10deg);
-}
-
-.concept1-3 img {
+.concept2 img {
   width: 60%;
-  margin-left: 30%;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(6deg);
-}
-
-.concept2-1 img {
-  width: 60%;
-  margin: 30px 0;
-  margin-top: 40px;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(5deg);
-}
-
-.concept2-2 img {
-  width: 60%;
-  margin-left: 30%;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(-5deg);
-}
-
-.concept2-3 img {
-  margin-left: 10%;
-  width: 60%;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(6deg);
-}
-
-.concept3-1 img {
-  width: 60%;
-  margin: 30px 0;
-  margin-left: 20%;
-  margin-top: 40px;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(3deg);
-}
-
-.concept3-2 img {
-  width: 60%;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(-10deg);
-}
-
-.concept3-3 img {
-  width: 50%;
-  margin:30px 0;
-  margin-left: 30%;
-  border: 1px dashed black;
-  padding: 10px;
-  transform: rotate(5deg);
+  object-fit: cover;
+  margin: 0 auto;
+  /* float: left; */
+  position: absolute;
+  top:350px;
+  left: 0;
 }
 
 .flex {
@@ -607,7 +494,7 @@ h1 {
 
 /* メニューページ */
 .top-menu img {
-  height: 500px;
+  height: 700px;
   width: 100%;
   object-fit: cover;
 }
@@ -633,13 +520,14 @@ h1 {
 .menu-imgs {
   display: flex;
   margin-bottom: 50px;
+  justify-content: center;
 }
 
 dl.menu-detail div{
   position: relative;
   display: flex;
   justify-content: space-between;
-  margin: 5px 0;
+  margin: 5px 0 30px 0;
   padding: 5px 0;
   border-bottom: 1px solid #dcdcdc;
   }
@@ -745,18 +633,6 @@ section.menu-details {
     font-size: 20px;
   }
 
-  .insta-s {
-    display: block;
-  }
-
-  .insta-l {
-    display: none;
-  }
-
-  .sns-title a {
-    font-size: 30px;
-  }
-
   .access-flex {
     font-size: 12px;
   }
@@ -767,31 +643,46 @@ section.menu-details {
 
   /* menumore */
   .menu-more {
-    width: 200px;
     height: 120px;
     padding-top:80px;
   }
 
   .menu-more-bg {
-    width: 200px;
     height: 200px;
   }
 
   /* コンセプトページ */
   .concept img {
     width: 100%;
-    height: 300px;
+    height: 400px;
   }
 
   .clear {
     display: none;
   }
-}
 
-  /* メニューページ */
-  .menu-title {
-    font-size: 40px;
+  .number {
+    font-size: 90px;
   }
+
+  .concept-wrapper{
+    margin-bottom: 40%;
+  }
+
+  .concept-left {
+    height: 500px;
+  }
+
+  .concept-right {
+    height: 500px;
+    margin-left: 30%;
+  }
+
+  .concept1 img {
+    top: 350px;
+  }
+
+}
 
 @media (max-width: 734px){
   .header-logo img {
@@ -833,7 +724,7 @@ section.menu-details {
   }
 
   .about-content {
-    width: 95%;
+    width: 90%;
   }
 
   .about-content p {
@@ -842,6 +733,7 @@ section.menu-details {
     margin-right: 5px;
     margin-left: 5px;
     line-height: 20px;
+    width: 100%;
   }
 
   .green {
@@ -893,16 +785,6 @@ section.menu-details {
     width: 100%;
     height: 100px;
     margin-bottom: 20px;
-  }
-
-  /* SNS */
-  .sns a {
-    font-size: 20px;
-  }
-
-  .facebook {
-    margin-top: 100px;
-    margin-bottom: 50px;
   }
 
   /* access */
@@ -968,12 +850,25 @@ section.menu-details {
    margin: 30px 10px;
  }
 
+  .concept-left {
+    height: 400px;
+  }
+
+  .concept-right {
+    height: 400px;
+    margin-left: 15%;
+  }
+
   .concept-wrapper {
-    margin-left: 20px;
+    margin-bottom: 40%;
   }
 
   .concept-wrapper p {
     font-size: 18px;
+  }
+
+  .number {
+    font-size: 50px;
   }
 
   .concept-text {
@@ -981,44 +876,18 @@ section.menu-details {
     margin-left: 10px;
   }
 
-  .concept-wrapper .font {
+  .font {
     font-size: 18px;
   }
 
-  .concept1-1 img {
-    width: 70%;
-  }
-
-  .concept1-2 img {
-    width: 95%;
-  }
-
-  .concept1-3 img {
-    width: 60%;
-  }
-
-  .concept2-1 img {
+  .concept1 img {
     width: 80%;
+    top: 250px;
   }
 
-  .concept2-2 img {
-    width: 60%;
-  }
-
-  .concept2-3 img {
-    width: 70%;
-  }
-
-  .concept3-1 img {
+  .concept2 img {
     width: 80%;
-  }
-
-  .concept3-2 img {
-    width: 80%;
-  }
-
-  .concept3-3 img {
-    width: 70%;
+    top: 250px;
   }
 
 /* メニューページ */
@@ -1060,6 +929,10 @@ section.menu-details {
 
   .select li {
     font-size: 10px;
+  }
+
+  dl.menu-detail div{
+    margin: 5px 0 20px 0;
   }
 
   dt {
