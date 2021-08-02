@@ -238,6 +238,7 @@ header {
 .about-content {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 .about-content p {
